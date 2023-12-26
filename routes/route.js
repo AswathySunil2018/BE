@@ -6,5 +6,5 @@ const router=express.Router();
 
 router.route('/user/signin').post(userController.signinUserControllerFun);
 router.route('/user/login').get(userController.loginUserControllerFun);
-router.route('/category/,cat').get(categoryController.categoryControllerFun);
+router.route('/category/cat').get(categoryController.categoryControllerFun);
 module.exports=router;
