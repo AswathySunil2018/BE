@@ -13,6 +13,10 @@ var categorySchema=new Schema({
   description:{
     type:String,
     required:true
+  }, 
+  page:{
+    type:String,
+    required:true
   }
  
 });
