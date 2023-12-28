@@ -1,0 +1,27 @@
+var mongoose=require('mongoose');
+var Schema=mongoose.Schema;
+
+var accessorySchema=new Schema({
+  name:{
+    type:String,
+    required:true
+  },
+  color:{
+    type:String,
+    required:true
+  },
+  price:{
+    type:Number,
+    required:true
+  },
+  material:{
+    type:String,
+    required:true
+  },
+  image:{
+    type:String,
+    required:true
+  },
+});
+
+module.exports=mongoose.model('accessories',accessorySchema);
