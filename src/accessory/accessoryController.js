@@ -4,7 +4,7 @@ var accessoryModel=require('./accessoryModel')
 var accessoryControllerFun=async(req,res)=>{
     try{
  
-accessoryModelModel.find().then((result)=>{
+accessoryModel.find().then((result)=>{
     res.status(200).send(result);
   
    
